@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+<title>Aisha Aamanna</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear">
+    <div class="fl_left"> 
+      <ul class="nospace">
+        <li><i class="fas fa-phone rgtspace-5"></i>011 6213 7426</li>
+        <li><i class="far fa-envelope rgtspace-5"></i>aishasiswadi@gmail.com</li>
+      </ul>
+    </div>
+    <div class="fl_right"> 
+      <ul class="nospace">
+        <li id="searchform">
+          <div>
+            <form action="#" method="post">
+              <fieldset>
+                <legend>Quick Search:</legend>
+                <input type="text" placeholder="Enter search term&hellip;">
+                <button type="submit"><i class="fas fa-search"></i></button>
+              </fieldset>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="bgded" style="background-image:url('images/myself3.jpg');"> 
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left">
+        <h1><a href="index.html">BY AISHA AAMANNA</a></h1>
+      </div>
+      <nav id="mainav" class="fl_right"> 
+        <ul class="clear">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a class="drop" href="#">Pages</a>
+            <ul>
+              <li><a href="pages/family.html">Family Pics</a></li>
+              <li><a href="pages/friend.html">Friend Pics</a></li>
+              <li><a href="pages/education.html">Education</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div class="overlay">
+    <div id="pageintro" class="hoc clear"> 
+      <article>
+        <h3 class="heading">About Me</h3>
+        <p>At 20 and standing 5'4", I'm a curious soul constantly seeking new adventures and experiences. Whether it's the thrill of playing netball or the joy of discovering new foods, I embrace life's variety with enthusiasm and an open heart.</p>
+        <footer><a class="btn" href="#">ABOUT</a></footer>
+      </article>
+    </div>
+  </div>
+</div>
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <section id="introblocks">
+      <ul class="nospace group btmspace-80">
+        <li class="one_third first">
+          <figure><a class="imgover" href="#"><img src="images/myself1.jpeg" alt=""></a>
+            <figcaption>
+              <h6 class="heading">RAYA 2024</h6>
+              <div>
+                <p>Pink raya theme</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><a class="imgover" href="#"><img src="images/cake.jpeg" alt=""></a>
+            <figcaption>
+              <h6 class="heading">MY BIRTHDAY BENTO CAKE</h6>
+              <div>
+                <p>Cutest cake ever! Vanilla and strawberry filling are my all time favourite!</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><a class="imgover" href="#"><img src="images/myself7.jpeg" alt=""></a>
+            <figcaption>
+              <h6 class="heading">SMILE AND BE HAPPY</h6>
+              <div>
+                <p>Picture of me smiling while waiting for iftar</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+    <audio id="background-audio" controls loop>
+        <source src="audios/everything.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+  </footer>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright &copy; 2024 - All Rights Reserved - <a href="#">BY AISHA AAMANNA</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">AISHA AAMANNA</a></p>
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const audio = document.getElementById('background-audio');
+        audio.play().catch(error => {
+            console.log('Autoplay was prevented.');
+        });
+
+        document.body.addEventListener('click', () => {
+            audio.play().catch(error => {
+                console.log('Play triggered but still prevented.');
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
