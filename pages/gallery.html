@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+    <div class="wrapper row0">
+        <div id="topbar" class="hoc clear">
+            <div class="fl_left"> 
+                <ul class="nospace">
+                    <li><i class="fas fa-phone rgtspace-5"></i>011 6213 7426</li>
+                    <li><i class="far fa-envelope rgtspace-5"></i>aishasiswadi@gmail.com</li>
+                </ul>
+            </div>
+            <div class="fl_right"> 
+                <ul class="nospace">
+                    <li id="searchform">
+                        <div>
+                            <form action="#" method="post">
+                                <fieldset>
+                                    <legend>Quick Search:</legend>
+                                    <input type="text" placeholder="Enter search term&hellip;">
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bgded" style="background-image:url('../images/gallery_bg.jpg');">
+        <div class="wrapper row1">
+            <header id="header" class="hoc clear">
+                <div id="logo" class="fl_left"> 
+                    <h1><a href="../index.html">BY AISHA AAMANNA</a></h1>
+                </div>
+                <nav id="mainav" class="fl_right"> 
+                    <ul class="clear">
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="active"><a class="drop" href="#">Pages</a>
+                            <ul>
+                                <li><a href="family.html">Family Pics</a></li>
+                                <li><a href="friend.html">Friend Pics</a></li>
+                                <li><a href="education.html">Education</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="overlay">
+            <div id="breadcrumb" class="hoc clear"> 
+                <h6 class="heading">Gallery</h6>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper row3">
+        <main class="hoc container clear"> 
+            <div class="content"> 
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <video controls>
+                            <source src="../videos/video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="mySlides fade">
+                        <video controls>
+                            <source src="../videos/video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="../images/picture1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="../images/picture2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="../images/picture3.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="../images/picture4.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="../images/picture5.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="../images/picture6.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="wrapper row5">
+        <div id="copyright" class="hoc clear">
+            <p class="fl_left">Copyright &copy; 2024 - All Rights Reserved - <a href="#">BY AISHA AAMANNA</a></p>
+            <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">AISHA AAMANNA</a></p>
+        </div>
+    </div>
+
+    <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+
+    <script src="../layout/scripts/jquery.min.js"></script>
+    <script src="../layout/scripts/jquery.backtotop.js"></script>
+    <script src="../layout/scripts/jquery.mobilemenu.js"></script>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>
